@@ -18,7 +18,7 @@ A simple Fashion Store Billing System developed using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## 📷 Screenshot
-![Fashion Store Billing System](screenshot.png)
+![Fashion Store Billing System](DressStore/screenshot.png)
 
 ## 👨‍💻 Author
 Sudeshwari V
