@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dress Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="errorBox" class="error-box">
+        <p id="errorMsg"></p>
+    </div>
+    <div class="container">
+        <h1>Fashion Store Billing System</h1>
+    <div class="form">
+        <input type="text" id="customer" placeholder="Customer Name">
+        <input type="text" id="dress" placeholder="Dress Name">
+        <select id="size">
+            <option value="">Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option> 
+            <option>XL</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Quantity">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addItem()" id="btn">Add</button>
+    </div>
+    <div id="printArea">
+        <h1>Fashion Store</h1>
+        <p id="date"></p>
+        <hr>
+        <h3>Customer :<span id="customerDisplay"></span></h3>   
+        <table>
+        <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Dress</th>
+            <th>Size</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="billData">
+        </tbody>
+        </table>
+        <div class="total">
+            Grand Total :₹<span id="grand">0</span>
+        </div>
+        <h2>Final Total :₹<span id="finalTotal">0</span></h2>
+        
+        <hr>
+        <h3>Thank You Visit Again!!!</h3>
+        <button onclick="printBill()">Print Bill</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
